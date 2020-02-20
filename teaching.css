@@ -1,0 +1,138 @@
+/* Variables */
+:root {
+    --primary-font: 'Julius Sans One', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+    --primary-color: #ffffff;
+    --sub-color: #ffda95;
+    --secondary-color: #c8c8c8;
+    --text-color: #a55b2a;
+    --section-color: #332a19e1;
+}
+
+/* Teaching Banner*/
+#teaching_banner {
+    position: relative;
+    background: transparent;
+    top: 0;
+    left: 0;
+    min-height: 60vh;
+    max-height: 100%;
+    text-align: center;
+}
+
+#teaching_banner_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(63, 55, 40, 0.5);
+}
+
+#teaching_banner_text > h1 {
+    margin: 0 auto;
+}
+
+#teaching_banner_text > h3 {
+    color: var(--primary-color);
+    margin: 5px auto 22px auto;
+    width: 70%;
+}
+
+/* Teaching Private */
+#teaching_private {
+    padding: 0;
+    width: 100%;
+}
+
+#teaching_private h2 {
+    margin: 4rem auto 1.5rem auto;
+}
+
+#teaching_private p {
+    margin: 0 3rem;
+}
+
+#teaching_private hr {
+    margin: 1.5rem 3.5rem;
+    background: var(--secondary-color);
+}
+
+#teaching_private button {
+    width: 10rem;
+}
+
+/* Teaching Groups Banner */
+#teaching_groups {
+    position: relative;
+    background: transparent;
+    top: 0;
+    left: 0;
+    min-height: 60vh;
+    max-height: 100%;
+    text-align: center;
+}
+
+#teaching_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(63, 55, 40, 0.5);
+}
+
+/* Teaching Groups Paragraph */
+#teaching_groups_p {
+    margin: 3rem;
+    text-align: center;
+}
+
+#teaching_groups_p p {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#teaching_groups_p button {
+    width: 15rem;
+    margin: .5rem auto 2.5rem auto;
+}
+
+/* Group Yoga Carousel */
+#group_yoga_carousel {
+    padding: 3rem;
+    margin: 3rem;
+}
+
+#hiyoga_btn {
+    font-family: var(--primary-font);
+    color: var(--section-color);
+    border-radius: 0;
+}
+
+#hiyoga_btn:hover {
+    background: rgba(4, 21, 56, 0.548);
+    color: var(--primary-color);
+}
+
+@media (max-width: 960px) {
+    #teaching_banner {
+        background-position: right center;
+    }
+    #teaching_groups_p {
+        margin: 1.5rem;
+    }
+    #group_yoga_carousel {
+        padding: 1.5rem;
+        margin: .5rem;
+    }
+}

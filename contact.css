@@ -1,0 +1,163 @@
+/* Variables */
+:root {
+    --primary-font: 'Julius Sans One', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+    --primary-color: #ffffff;
+    --sub-color: #ffda95;
+    --secondary-color: #c8c8c8;
+    --text-color: #a55b2a;
+    --section-color: rgba(51, 42, 25, 0.882);
+}
+
+/* Contact Banner*/
+#contact_banner {
+    position: relative;
+    background: transparent;
+    top: 0;
+    left: 0;
+    min-height: 65vh;
+    max-height: 100%;
+    text-align: center;
+}
+
+#contact_banner_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(63, 55, 40, 0.5);
+}
+
+#contact_banner_text > h1 {
+    margin: 0 auto;
+}
+
+#contact_banner_text > h3 {
+    color: var(--primary-color);
+    margin: 5px auto 22px auto;
+    width: 70%;
+}
+
+#contact p {
+    margin: 3rem auto;
+}
+
+/* Contact Column Form */
+#contact {
+    text-align: center;
+    display: flex;
+    padding: 0;
+}
+
+#contact hr {
+    margin: 1.5rem 3.5rem;
+    background: var(--secondary-color);
+}
+
+.form-row {
+    text-align: center;
+}
+
+#form_name, #form_email {
+    width: 80%;
+    box-shadow: 5px 5px 5px var(--secondary-color);
+}
+
+#form_name {
+    float: right;
+}
+
+#form_message {
+    margin: 1rem auto;
+    width: 80%;
+    box-shadow: 5px 5px 5px var(--secondary-color);
+}
+
+#contact_column p {
+    padding: 1.5rem;
+}
+
+/* Location Column */
+#location_column {
+    width: 50%;
+    padding-top: 4rem;
+    color: var(--secondary-color);
+    background: rgba(4, 21, 56, 0.747);
+}
+
+#location_column > * {
+    padding: 0 2rem;
+}
+
+#location_column h4 {
+    font-family: var(--primary-font);
+    color: white;
+}
+
+#location_column p {
+    margin-top: .5rem !important;
+}
+
+#location_column a {
+    padding: 0;
+}
+
+#hiyoga_btn {
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    border-radius: 0;
+}
+
+#hiyoga_btn:hover {
+    background: rgba(4, 21, 56, 0.548);
+    color: var(--primary-color);
+}
+
+/* Submit Button */
+#submit_field {
+    border: 1.75px solid white;
+    border-radius: 0;
+    padding: 8px 22.5px;
+    font-family: var(--primary-font);
+    font-size: 1.15rem;
+    transition: .3s;
+    margin-bottom: 2.5rem;
+}
+
+#submit_field:hover {
+    background: var(--section-color);
+    color: var(--primary-color);
+}
+
+@media (max-width: 960px) {
+    #contact_banner {
+        min-height: 45vh;
+        width: 100%;
+        max-width: 960px;
+    }
+    #contact {
+        flex-direction: column;
+    }
+    #location_column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #form_name {
+        float: none;
+    }
+    #form_name, #form_email {
+        margin: .5rem auto;
+        width: 80%;
+    }
+    #contact_p {
+        font-size: 1.25rem;
+    }
+}

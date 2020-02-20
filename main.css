@@ -1,0 +1,339 @@
+/* Variables */
+:root {
+    --primary-font: 'Julius Sans One', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+    --primary-color: #ffffff;
+    --sub-color: #ffda95;
+    --secondary-color: #c8c8c8;
+    --text-color: #a55b2a;
+    --section-color: #332a19e1;
+    --extra-section-color: #302107e1;
+}
+
+/* Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--text-font);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: var(--primary-font);
+}
+
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    line-height: 120%;
+}
+
+p {
+    font-family: var(--secondary-font);
+}
+
+/* Navbar */
+.navbar {
+    z-index: 2;
+    background: var(--section-color) !important;
+    position: fixed;
+    width: 100%;
+    transition: .3s all;
+}
+
+#brand_logo, #navbar_menu {
+    font-family: var(--primary-font);
+}
+
+#brand_logo {
+    font-size: 1.5rem;
+}
+
+#navbar_menu .navbar-nav > li {
+    margin: 7.5px;
+}
+
+/* Buttons */
+#contact_btn, #banner_btn {
+    border: 1.75px solid white;
+    border-radius: 0;
+}
+
+#see_more_btn {
+    border-radius: 0;
+    padding: 5px 22.5px;
+    font-family: var(--primary-font);
+    font-size: 1.25rem;
+    background: var(--section-color);
+    color: var(--primary-color);
+}
+
+#see_more_btn:hover {
+    background: var(--primary-color);
+    color: var(--section-color);
+    border: 1px solid var(--section-color);
+}
+
+#contact_btn {
+    padding: 5px 10px;
+}
+
+#banner_btn {
+    padding: 8px 22.5px;
+    font-family: var(--primary-font);
+    font-size: 1.25rem;
+    }
+
+#about_btn {
+    font-family: var(--primary-font);
+    font-size: 1.15rem;
+    color: var(--primary-color);
+    background: var(--section-color);
+    border-radius: 0;
+    width: 8rem;
+    margin: 2rem auto 4.5rem auto;
+}
+
+#about_btn:hover {
+    background: var(--primary-color);
+    color: var(--section-color);
+    border: 1px solid var(--section-color);
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 0;
+    text-align: center;
+}
+
+/* Banner */
+#banner {
+    position: relative;
+    background: transparent;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    max-height: 100%;
+    text-align: center;
+}
+
+#banner_text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background: rgba(63, 55, 40, 0.253);
+}
+
+#banner_text > h1 {
+    margin: 0 auto;
+}
+
+#banner_text > h3 {
+    margin: 5px auto 22px auto;
+    width: 60%;
+}
+
+#banner_text > h3:first-of-type {
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+}
+
+/* Services */
+#services {
+    margin-bottom: 1.5rem;
+}
+
+#services .card {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+}
+
+#services .card > img {
+    width: 70px;
+    margin: -.75rem auto .5rem auto;
+}
+
+#services .card-img-top {
+    margin-bottom: 1.5rem;
+}
+
+/* About */
+#about {
+    position: relative;
+    background: transparent;
+    top: 0;
+    left: 0;
+    min-height: 60vh;
+    max-height: 100%;
+    text-align: center;
+}
+
+#about_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(63, 55, 40, 0.5);
+}
+
+#about_p {
+    margin: 5rem auto 3rem auto;
+    padding: 0 10%;
+}
+
+#about_p a {
+    margin: 3rem auto;
+}
+
+/* About */
+#yoga {
+    position: relative;
+    background: transparent;
+    top: 0;
+    left: 0;
+    min-height: 60vh;
+    max-height: 100%;
+    text-align: center;
+}
+
+#yoga_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(63, 55, 40, 0.5);
+}
+
+#yoga_p {
+    color: white;
+    padding: 5.25rem 10%;
+    background: var(--extra-section-color);
+}
+
+#yoga_p h2 {
+    font-size: 1.75rem;
+}
+
+#yoga_info > * {
+    margin: 0;
+    padding: 0;
+}
+
+#yoga_info .col-lg-5 {
+    padding: 0;
+    height: 90%;
+}
+
+#yoga_vinyasa_card .row .col-lg-5 img, #yoga_yin_yoga_card .row .col-lg-5 img {
+    height: auto;
+    width: 75%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
+}
+
+#yoga_nidra_card .row .col-lg-5 img {
+    height: auto;
+    width: 90%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
+}
+
+#yoga_info .card {
+    margin: 2rem auto;
+}
+
+#yoga_nidra_card .row {
+    flex-direction: row-reverse !important;
+}
+
+#vinyasa_text, #nidra_text, #yin_yoga_text {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/* Footer */
+#footer {
+    padding: 0;
+}
+#footer > .footercard {
+    background: var(--section-color);
+    width: 100%;
+    padding: 3rem 0 .5rem 0;
+    text-decoration: none;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.footercard .row {
+    margin-top: .75rem;
+}
+
+#footer i {
+    color: var(--primary-color);
+    width: 2.2rem;
+    margin-right: .3rem;;
+    transition: .3s;
+}
+
+#footer i:hover {
+    color: var(--secondary-color);
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+    h1 {
+        font-size: 3.5rem;
+        width: 70%;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    #yoga {
+        min-height: 45vh;
+        width: 100%;
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    #yoga_p h2 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,16 @@
+# mode_rewrite function for rewriting URLs/extensions
+RewriteEngine on
+
+# does not apply to existing directories; don't run rule if directory exists
+
+RewriteCond %{REQUEST_FILENAME} -d 
+
+# check for file in directory with .html extension
+
+RewriteCond %{REQUEST_FILENAME}/.html -f
+
+# show the page that has the .html extension
+
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+ErrorDocument 404 /not-found.html
